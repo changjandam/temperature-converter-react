@@ -1,9 +1,9 @@
 import './OutputDegree.css'
 
-const OutputDegree = () => {
+const OutputDegree = (props) => {
   return (
     <div className='degree'>
-      <h1>33.8</h1>
+      <h1>{props.degree}</h1>
     </div>
   )
 }

@@ -1,0 +1,10 @@
+.input-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.input-type > p {
+  margin: 12px;
+}
