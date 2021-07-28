@@ -1,0 +1,12 @@
+.output-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.output-section > label {
+  color: gray;
+}
+
+.degrees {
+  display: flex;
+}

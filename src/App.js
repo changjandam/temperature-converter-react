@@ -1,5 +1,5 @@
 import InputSection from './components/InputSection'
-import OutputSection from './components/OutputSection'
+import OutputSection from './components/OutputSection/OutputSection'
 import './App.css'
 
 function App () {
