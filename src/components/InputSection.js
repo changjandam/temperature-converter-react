@@ -13,10 +13,11 @@ const InputSection = () => {
           <select>
             <option value='c'>Celsius</option>
             <option value='f'>Fahrenheit</option>
+            <option value='k'>Kelvin</option>
           </select>
         </div>
         <div className='btn-section'>
-          <button type='submit' />
+          <button type='submit'>Convert</button>
         </div>
       </form>
     </div>

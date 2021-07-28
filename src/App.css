@@ -1,8 +1,17 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color:rgb(240, 240, 240);
+  background-color:rgb(206, 246, 255);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-section {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 3px 3px rgb(195, 224, 237);
+  padding: 12px;
+  width: 600px;
+  height: 400px;
 }
