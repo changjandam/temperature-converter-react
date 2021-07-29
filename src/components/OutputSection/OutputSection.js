@@ -9,18 +9,18 @@ const OutputSection = (props) => {
     fahrenheitDegree: '',
     kelvinDegree: ''
   }
-  if (inputStatus.type === 'Celsius') {
+  if (inputStatus.type === 'Celsius' && inputStatus.degree) {
     temperature.celsiusDegree = parseFloat(inputStatus.degree).toFixed(2).toString() + '℃'
     temperature.fahrenheitDegree = ((parseFloat(inputStatus.degree) * 1.8) + 32).toFixed(2).toString() + '℉'
     temperature.kelvinDegree = (parseFloat(inputStatus.degree) + 273.15).toFixed(2).toString() + 'K'
   }
-  if (inputStatus.type === 'Fahrenheit') {
+  if (inputStatus.type === 'Fahrenheit' && inputStatus.degree) {
     temperature.celsiusDegree = ((parseFloat(inputStatus.degree) - 32) / 1.8).toFixed(2).toString() + '℃'
     temperature.fahrenheitDegree = parseFloat(inputStatus.degree).toFixed(2).toString() + '℉'
     temperature.kelvinDegree = (((parseFloat(inputStatus.degree) - 32) / 1.8) + 273.15).toFixed(2).toString() + 'K'
   }
 
-  if (inputStatus.type === 'Kelvin') {
+  if (inputStatus.type === 'Kelvin' && inputStatus.degree) {
     temperature.celsiusDegree = (parseFloat(inputStatus.degree) - 273.15).toFixed(2).toString() + '℃'
     temperature.fahrenheitDegree = (((parseFloat(inputStatus.degree) - 273.15) * 1.8) + 32).toFixed(2).toString() + '℉'
     temperature.kelvinDegree = parseFloat(inputStatus.degree).toFixed(2).toString() + 'K'
