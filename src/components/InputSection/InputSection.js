@@ -25,7 +25,7 @@ const InputSection = (props) => {
       <form onSubmit={submitHandler}>
         <div className='degree-section'>
           <label>Degrees</label>
-          <input type='number' autoFocus onChange={degreeHandler} />
+          <input type='string' autoFocus onChange={degreeHandler} maxLength='5' />
         </div>
         <div className='type-section'>
           <label>Type</label>
